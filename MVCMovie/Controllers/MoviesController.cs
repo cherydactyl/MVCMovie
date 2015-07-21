@@ -15,6 +15,7 @@ namespace MVCMovie.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
+<<<<<<< HEAD
         public ActionResult Index(string id)
         {
             string searchString = id;
@@ -27,6 +28,11 @@ namespace MVCMovie.Controllers
             }
 
             return View(movies);
+=======
+        public ActionResult Index()
+        {
+            return View(db.Movies.ToList());
+>>>>>>> parent of 84674dd... Part Eight: Adding Search
         }
 
         // GET: Movies/Details/5
