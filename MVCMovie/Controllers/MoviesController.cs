@@ -15,12 +15,8 @@ namespace MVCMovie.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        public ActionResult Index(string id)
+        public ActionResult Index(string searchString)
         {
-            string searchString = id;
             var movies = from m in db.Movies
                          select m;
 
@@ -30,22 +26,19 @@ namespace MVCMovie.Controllers
             }
 
             return View(movies);
-=======
-        public ActionResult Index()
-        {
-            return View(db.Movies.ToList());
->>>>>>> parent of 84674dd... Part Eight: Adding Search
-=======
-        public ActionResult Index()
-        {
-            return View(db.Movies.ToList());
->>>>>>> parent of 84674dd... Part Eight: Adding Search
-=======
-        public ActionResult Index()
-        {
-            return View(db.Movies.ToList());
->>>>>>> parent of 84674dd... Part Eight: Adding Search
         }
+        //public ActionResult Index()
+        //{
+        //    return View(db.Movies.ToList());
+        //}
+        //public ActionResult Index()
+        //{
+        //    return View(db.Movies.ToList());
+        //}
+        //public ActionResult Index()
+        //{
+        //    return View(db.Movies.ToList());
+        //}
 
         // GET: Movies/Details/5
         public ActionResult Details(int? id)
