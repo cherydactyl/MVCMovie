@@ -17,6 +17,7 @@ namespace MVCMovie.Controllers
         // GET: Movies
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public ActionResult Index(string id)
         {
             string searchString = id;
@@ -29,6 +30,11 @@ namespace MVCMovie.Controllers
             }
 
             return View(movies);
+=======
+        public ActionResult Index()
+        {
+            return View(db.Movies.ToList());
+>>>>>>> parent of 84674dd... Part Eight: Adding Search
 =======
         public ActionResult Index()
         {
